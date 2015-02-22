@@ -38,4 +38,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.cache_store = :file_store, "#{config.root}/tmp/cache_store/",{
+    namespace:   "development",
+    expires_in:  5.minutes,
+    compression: false }
 end
