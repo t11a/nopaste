@@ -1,3 +1,13 @@
+
+# Environment
+
+
+|   |   |
+|---|---|
+| ruby | 2.2.0p0 |
+| Rails | 4.2.0 |
+| MySQL | 5.6 |
+
 # Getting Started
 
 ## install gem libraries
