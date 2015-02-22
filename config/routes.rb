@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get '/'      => 'contents#new'
-  get '/p/:id' => 'contents#show'
+
+  get  '/'       => 'home#new'
+  post '/create' => 'home#create'
+  get  '/p/:key' => 'home#show'
 
   resources :contents
 

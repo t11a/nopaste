@@ -14,17 +14,11 @@
 ActiveRecord::Schema.define(version: 20150222064129) do
 
   create_table "contents", force: :cascade do |t|
-    t.text     "body"
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "homes", force: :cascade do |t|
-    t.text     "content"
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "key",        limit: 255
+    t.text     "body",       limit: 65535
+    t.string   "name",       limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
 end
