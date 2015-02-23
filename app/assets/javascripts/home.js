@@ -10,6 +10,7 @@ $(document).ready(function() {
       location.href = "/p/" + data.key;
     })
     .on("ajax:error", function(e, xhr, status, error) {
-      console.log("error");
+      console.log(e);
+      alert(status);
     });
 });
